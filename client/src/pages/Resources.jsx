@@ -51,7 +51,7 @@ export default function Resources() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/pdf", formData, {
+      const res = await axios.post("https://ai-study-planner-a182.onrender.com/api/pdf", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

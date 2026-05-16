@@ -17,7 +17,7 @@ export default function Dashboard() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("http://localhost:5000/api/stats", {
+        const res = await axios.get("https://ai-study-planner-a182.onrender.com/api/stats", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
