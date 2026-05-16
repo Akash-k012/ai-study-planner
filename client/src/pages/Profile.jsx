@@ -17,7 +17,7 @@ export default function Profile() {
         const userId = localStorage.getItem("userId");
 
         const res = await axios.get(
-          `http://localhost:5000/api/auth/user/${userId}`
+          `https://ai-study-planner-a182.onrender.com/api/auth/user/${userId}`
         );
 
         setUser(res.data);
@@ -34,7 +34,7 @@ export default function Profile() {
       const userId = localStorage.getItem("userId");
 
       const res = await axios.put(
-        "http://localhost:5000/api/auth/update",
+        "https://ai-study-planner-a182.onrender.com/api/auth/update",
         {
           userId,
           name: user.name,

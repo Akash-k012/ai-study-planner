@@ -10,7 +10,7 @@ export default function Register() {
   const register = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://ai-study-planner-a182.onrender.com/api/auth/register",
         { name, email, password }
       );
 

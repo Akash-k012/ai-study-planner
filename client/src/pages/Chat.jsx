@@ -15,7 +15,7 @@ export default function Chat() {
     const token = localStorage.getItem("token");
 
     axios
-      .get("http://localhost:5000/api/chat", {
+      .get("https://ai-study-planner-a182.onrender.com/api/chat", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -40,7 +40,7 @@ export default function Chat() {
     setLoading(true);
 
     const res = await axios.post(
-      "http://localhost:5000/api/chat",
+      "https://ai-study-planner-a182.onrender.com/api/chat",
       { message: msg },
       {
         headers: {

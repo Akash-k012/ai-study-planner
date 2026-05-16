@@ -29,7 +29,7 @@ export default function Study() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/study",
+        "https://ai-study-planner-a182.onrender.com/api/study",
         { topic },
         {
           headers: {
